@@ -24,7 +24,7 @@ aria2.set_global_options(options)
 
 
 async def download_video(url, reply_msg, user_mention, user_id):
-    response = requests.get(f"https://teraboxvideodownloader.nepcoderdevs.workers.dev/?url={url}")
+    response = requests.get(f"http://localhost:5000/terabox?url=https://teraboxapp.com/s/1RCBLl4RBXh446ZKoHgHZJt_Q")
     response.raise_for_status()
     data = response.json()
 
